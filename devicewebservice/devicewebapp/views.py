@@ -25,8 +25,8 @@ from datetime import datetime as dt
 """Uncomment - required for UserLogin/Registration Page Authentication and Access"""
 #from django.contrib.auth import authenticate,login,logout
 #from django.contrib.auth.decorators import login_required
-#from django.http import HttpResponseRedirect, HttpResponse, JsonResponse
-#from django.urls import reverse
+from django.http import HttpResponseRedirect, HttpResponse, JsonResponse
+from django.urls import reverse
 
 from django.views.decorators.csrf import csrf_exempt
 #from django.contrib import messages

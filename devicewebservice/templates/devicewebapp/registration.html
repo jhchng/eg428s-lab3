@@ -2,15 +2,6 @@
 {% load static %}
 
 {% block body_block %}
-<script type="text/javascript">
-    function clicked() {
-       if (confirm('Do you want to submit?')) {
-           yourformelement.submit();
-       } else {
-           return false;
-       }
-    }
-</script>
 <div class="jumbotron">
   {% if registered %}
     <h1>Thank you for registering!</h1>
@@ -22,7 +13,6 @@
       {% csrf_token %}
       {{ user_form.as_p }}
       {{ profile_form.as_p }}
-      <!-- <input type="submit" onclick="clicked();" name="" value="Register"> !-->
       <input type="submit" name="" value="Register">
     </form>
   {% endif %}
