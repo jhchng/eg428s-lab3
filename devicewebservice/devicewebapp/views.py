@@ -23,8 +23,8 @@ from devicewebapp.mqttdev import xdata, ydata, motor_on
 from datetime import datetime as dt
 
 """Uncomment - required for UserLogin/Registration Page Authentication and Access"""
-#from django.contrib.auth import authenticate,login,logout
-#from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate,login,logout
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect, HttpResponse, JsonResponse
 from django.urls import reverse
 
@@ -181,6 +181,7 @@ def register(request):
 """
 
 """
+#Not used in this Lab
 @api_view()
 @permission_classes([IsAuthenticated,])
 def hello(request):
